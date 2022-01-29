@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+
+    <header>
+      <button type="button" id="show-modal">+</button>
+      <button title="Clear local storage" type="button" id="clear-local">CL</button>
+      <input type="text" placeholder="Search" id="search">
+    </header>
+
+    <main>
+      <p id="no-items">No items</p>
+      <div id="items">
+      </div>
+    </main>
+
+    <div id="modal">
+      <input type="text" placeholder="Enter URL" id="url">
+      <button type="button" id="add-item">Add item</button>
+      <button id="close-modal">Cancel</button>
+    </div>
+
+    <script>
+      require('./app.js');
+    </script>
+  </body>
+</html>
